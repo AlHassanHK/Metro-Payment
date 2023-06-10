@@ -1,6 +1,3 @@
-const axios = require("axios");
-
-
 const createPaymentIntent = async (req, res, next) => {
     const stripe = require("stripe")(
         "sk_test_51NGMdQFUpR2M3acGyKydVd3HKugHmD2QzgLZ7TTMaHtFttry97RxQ4h7Ni8kF9QBu9ShujXkBfymSiW3g02kvb7M00OBpkwbm2"
