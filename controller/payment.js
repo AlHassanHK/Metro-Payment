@@ -40,6 +40,13 @@ const createPaymentIntent = async (req, res, next) => {
         });
 };
 
+
+const defaultPage = (_req, res)=>{
+  res.send("beeb-beeb-boop");
+}
+
+
 module.exports = {
-createPaymentIntent
+createPaymentIntent,
+defaultPage
 };
