@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { createPaymentIntent } = require('../controller/payment');
+const { createPaymentIntent, defaultPage } = require('../controller/payment');
 
 router.post('/pay', createPaymentIntent);
 router.get("/", defaultPage)
